@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@tools:dp/16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulir Identitas"
+            android:textSize="@tools:dp/24"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@tools:dp/16"/>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:layout_marginBottom="@tools:dp/16"/>
+
+        <EditText
+            android:id="@+id/ageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usia"
+            android:inputType="number"
+            android:layout_marginBottom="@tools:dp/16"/>
+
+        <!-- RadioGroup untuk memilih jenis kelamin -->
+        <RadioGroup
+            android:id="@+id/genderRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@tools:dp/16">
+
+            <RadioButton
+                android:id="@+id/maleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki"/>
+
+            <RadioButton
+                android:id="@+id/femaleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"/>
+        </RadioGroup>
+
+        <!-- NumberPicker untuk memilih tinggi badan -->
+        <NumberPicker
+            android:id="@+id/heightPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minValue="150"
+            android:maxValue="200"
+            android:wrapSelectorWheel="true"
+            android:layout_marginBottom="@tools:dp/16"/>
+
+        <!-- NumberPicker untuk memilih berat badan -->
+        <NumberPicker
+            android:id="@+id/weightPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minValue="40"
+            android:maxValue="190"
+            android:wrapSelectorWheel="true"
+            android:layout_marginBottom="@tools:dp/16"/>
+
+        <EditText
+            android:id="@+id/placeOfBirthEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempat Lahir"
+            android:layout_marginBottom="@tools:dp/16"/>
+
+        <EditText
+            android:id="@+id/dateOfBirthEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tanggal Lahir"
+            android:layout_marginBottom="@tools:dp/16"/>
+
+        <!-- Spinner untuk memilih golongan darah -->
+        <Spinner
+            android:id="@+id/bloodTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@tools:dp/16"/>
+
+        <!-- Spinner untuk memilih agama -->
+        <Spinner
+            android:id="@+id/religionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@tools:dp/16"/>
+
+        <!-- Spinner untuk memilih status perkawinan -->
+        <Spinner
+            android:id="@+id/maritalStatusSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@tools:dp/16"/>
+
+        <!-- Spinner untuk memilih kewarganegaraan -->
+        <Spinner
+            android:id="@+id/nationalitySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@tools:dp/16"/>
+
+        <!-- Tombol "Submit" -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+
+    </LinearLayout>
+</ScrollView>
